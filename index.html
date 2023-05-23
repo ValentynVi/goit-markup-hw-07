@@ -23,13 +23,27 @@
 
   <body>
     <!-- Header section -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container container">
-        Navigation
+        <!-- Navigation -->
         <nav class="header-nav">
           <a class="header-logo logo link" href="./index.html"
             >Web<span class="logo-span">Studio</span></a
           >
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="toggle-icon"
+            width="32"
+            height="22"         
+          >
+             <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+
           <ul class="header-nav-list list">
             <li class="nav-item">
               <a class="header-link link active" href="./index.html">Studio</a>
@@ -43,7 +57,7 @@
           </ul>
         </nav>
 
-        Address
+        <!-- Address -->
         <address class="header-address">
           <ul class="header-address-list list">
             <li class="address-item">
@@ -59,23 +73,23 @@
           </ul>
         </address>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- Hero section -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Features section  -->
-      <!-- <section class="features section">
+      <section class="features section">
         <div class="container">
-          Скрытый заголовок, используем для ассистивных технологий и индексатор
+          <!-- Скрытый заголовок, используем для ассистивных технологий и индексатор -->
           <h2 class="features-title title visually-hidden">Our Features</h2>
           <ul class="features-list card-set list">
             <li class="features-item card-set-item">
@@ -128,10 +142,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- About section -->
-      <!-- <section class="about">
+      <section class="about">
         <div class="container">
           <h2 class="about-title title">What are we doing</h2>
           <ul class="about-list card-set list">
@@ -161,10 +175,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Employees section -->
-      <!-- <section class="employee section">
+      <section class="employee section">
         <div class="container">
           <h2 class="employee-title title">Our Team</h2>
           <ul class="employee-list card-set list">
@@ -435,10 +449,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Customers section -->
-      <!-- <section class="customers section">
+      <section class="customers section">
         <div class="container">
           <h2 class="customers-title title">Customers</h2>
           <ul class="customers-social-list card-set list">
@@ -522,7 +536,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Footer -->
@@ -696,9 +710,111 @@
       </div>
     </div>
 
+    <!-- MOBILE MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+
+          <svg class="mobile-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+
+       
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="mobile-menu-link link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./contacts.htm" class="mobile-menu-link link">Contacts</a>
+        </li>
+      </ul>
+
+        
+         <ul class="contacts-menu list">
+            <li class="contacts-item">
+              <a class="contacts-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+
+            <li class="contacts-item">
+              <a class="mail-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+       
+       <ul class="mobile-social-list list">
+                  <li class="mobile-social-item">
+                    <a
+                      class="mobile-social-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram icon"
+                    >
+                      <svg class="mobile-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-social-item">
+                    <a
+                      class="mobile-social-link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Twitter icon"
+                    >
+                      <svg class="mobile-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-social-item">
+                    <a
+                      class="mobile-social-link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook icon"
+                    >
+                      <svg class="mobile-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-social-item">
+                    <a
+                      class="mobile-social-link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Linkedin icon"
+                    >
+                      <svg class="mobile-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+    </div>
+
     <!-- MASK FOR INPUT -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/jquery.inputmask.min.js"></script>
+    <!-- MOBILE MENU SCRIPTS -->
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <!-- MY SCRIPT -->
     <script src="./js/modal.js"></script>
     <script src="./js/inputmask.js"></script>
