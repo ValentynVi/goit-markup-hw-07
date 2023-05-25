@@ -172,7 +172,7 @@ ul {
   padding: 0 16px;
   margin: 0 auto;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   /* outline-offset: -2px; */
 }
 
@@ -1183,6 +1183,7 @@ ul {
   z-index: var(--modal-idx);
 
   transition: opacity var(--anim-fast), visibility var(--anim-fast);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1203,8 +1204,8 @@ ul {
 
   transform: scale(1) translate(-50%, -50%);
 
-  padding: 72px 24px 24px 24px;
-  width: 408px;
+  padding: 72px 16px 24px 16px;
+  width: 392px;
   min-height: 576px;
 
   background-color: var(--modal-background-color);
@@ -1213,6 +1214,33 @@ ul {
   border-radius: 4px;
 
   transition: transform var(--anim-fast);
+  overflow-y: scroll;
+}
+
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+  .modal {
+    top: 95%;
+  }
+}
+
+@media only screen and (max-width: 427px) {
+  .modal {
+    width: 92%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    padding: 0 25px;
+    width: 408px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .modal {
+    padding: 0 24px;
+    width: 408px;
+  }
 }
 
 .modal-close-btn {
@@ -1549,6 +1577,10 @@ ul {
   color: var(--secondary-text-color);
 }
 
+.mobile-menu-link.active {
+  color: var(--primary-accent-color);
+}
+
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
   color: var(--primary-accent-color);
@@ -1577,6 +1609,12 @@ ul {
   display: flex;
   justify-content: start;
   gap: 56px;
+}
+
+@media only screen and (max-width: 427px) {
+  .mobile-social-list {
+    gap: 24px;
+  }
 }
 
 .mobile-social-link {
