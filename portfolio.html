@@ -24,7 +24,7 @@
     <!-- Header section -->
     <header class="header">
       <div class="header-container container">
-        Navigation
+        <!-- Navigation -->
         <nav class="header-nav">
           <a class="header-logo logo link" href="./index.html"
             >Web<span class="logo-span">Studio</span></a
@@ -80,7 +80,7 @@
           <!-- Скрытый заголовок, используем для ассистивных технологий и индексатор -->
           <h1 class="portfolio-title title visually-hidden">Our Portfolio</h1>
 
-          <!-- <ul class="portfolio-button-list list">
+          <ul class="portfolio-button-list list">
             <li>
               <button class="portfolio-button btn" type="button">All</button>
             </li>
@@ -100,18 +100,75 @@
                 Marketing
               </button>
             </li>
-          </ul> -->
+          </ul>
 
           <ul class="portfolio-img-list card-set list">
             <li class="portfolio-item card-set-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/banking-1.jpg"
-                    alt="bank app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk1@1x.webp 1x,
+                        ./images/portfolio/port-desk1@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk1@1x.jpg 1x,
+                        ./images/portfolio/port-desk1@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab1@1x.webp 1x,
+                        ./images/portfolio/port-tab1@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab1@1x.jpg 1x,
+                        ./images/portfolio/port-tab1@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob1@1x.webp 1x,
+                        ./images/portfolio/port-mob1@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob1@1x.jpg 1x,
+                        ./images/portfolio/port-mob1@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./images/portfolio/port-mob1@1x.jpg"
+                      alt="Banking app interface"
+                      width="396"
+                      height="280"
+                      loading="lazy"
+                    />
+                  </picture>
 
                   <p class="overlay-text text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -128,12 +185,69 @@
             <li class="portfolio-item card-set-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/payment-2.jpg"
-                    alt="mobilephone"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk2@1x.webp 1x,
+                        ./images/portfolio/port-desk2@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk2@1x.jpg 1x,
+                        ./images/portfolio/port-desk2@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab2@1x.webp 1x,
+                        ./images/portfolio/port-tab2@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab2@1x.jpg 1x,
+                        ./images/portfolio/port-tab2@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob2@1x.webp 1x,
+                        ./images/portfolio/port-mob2@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob2@1x.jpg 1x,
+                        ./images/portfolio/port-mob2@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./images/portfolio/port-mob2@1x.jpg"
+                      alt="Banking app interface"
+                      width="396"
+                      height="280"
+                      loading="lazy"
+                    />
+                  </picture>
 
                   <p class="overlay-text text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -150,12 +264,69 @@
             <li class="portfolio-item card-set-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/meditation-3.jpg"
-                    alt="laptop"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk3@1x.webp 1x,
+                        ./images/portfolio/port-desk3@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk3@1x.jpg 1x,
+                        ./images/portfolio/port-desk3@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab3@1x.webp 1x,
+                        ./images/portfolio/port-tab3@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab3@1x.jpg 1x,
+                        ./images/portfolio/port-tab3@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob3@1x.webp 1x,
+                        ./images/portfolio/port-mob3@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob3@1x.jpg 1x,
+                        ./images/portfolio/port-mob3@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./images/portfolio/port-mob3@1x.jpg"
+                      alt="Banking app interface"
+                      width="396"
+                      height="280"
+                      loading="lazy"
+                    />
+                  </picture>
 
                   <p class="overlay-text text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -172,12 +343,69 @@
             <li class="portfolio-item card-set-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/taxi-4.jpg"
-                    alt="car"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk4@1x.webp 1x,
+                        ./images/portfolio/port-desk4@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk4@1x.jpg 1x,
+                        ./images/portfolio/port-desk4@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab4@1x.webp 1x,
+                        ./images/portfolio/port-tab4@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab4@1x.jpg 1x,
+                        ./images/portfolio/port-tab4@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob4@1x.webp 1x,
+                        ./images/portfolio/port-mob4@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob4@1x.jpg 1x,
+                        ./images/portfolio/port-mob4@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./images/portfolio/port-mob4@1x.jpg"
+                      alt="Banking app interface"
+                      width="396"
+                      height="280"
+                      loading="lazy"
+                    />
+                  </picture>
 
                   <p class="overlay-text text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -194,12 +422,69 @@
             <li class="portfolio-item card-set-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/illustrations-5.jpg"
-                    alt="mobilephone"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk5@1x.webp 1x,
+                        ./images/portfolio/port-desk5@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk5@1x.jpg 1x,
+                        ./images/portfolio/port-desk5@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab5@1x.webp 1x,
+                        ./images/portfolio/port-tab5@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab5@1x.jpg 1x,
+                        ./images/portfolio/port-tab5@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob5@1x.webp 1x,
+                        ./images/portfolio/port-mob5@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob5@1x.jpg 1x,
+                        ./images/portfolio/port-mob5@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./images/portfolio/port-mob5@1x.jpg"
+                      alt="Banking app interface"
+                      width="396"
+                      height="280"
+                      loading="lazy"
+                    />
+                  </picture>
 
                   <p class="overlay-text text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -216,12 +501,69 @@
             <li class="portfolio-item card-set-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/courses-6.jpg"
-                    alt="girl"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk6@1x.webp 1x,
+                        ./images/portfolio/port-desk6@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk6@1x.jpg 1x,
+                        ./images/portfolio/port-desk6@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab6@1x.webp 1x,
+                        ./images/portfolio/port-tab6@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab6@1x.jpg 1x,
+                        ./images/portfolio/port-tab6@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- Mobile -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob6@1x.webp 1x,
+                        ./images/portfolio/port-mob6@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob6@1x.jpg 1x,
+                        ./images/portfolio/port-mob6@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./images/portfolio/port-mob6@1x.jpg"
+                      alt="Banking app interface"
+                      width="396"
+                      height="280"
+                      loading="lazy"
+                    />
+                  </picture>
 
                   <p class="overlay-text text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -238,12 +580,69 @@
             <li class="portfolio-item card-set-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/instories-7.jpg"
-                    alt="people and innovations"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk7@1x.webp 1x,
+                        ./images/portfolio/port-desk7@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk7@1x.jpg 1x,
+                        ./images/portfolio/port-desk7@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab7@1x.webp 1x,
+                        ./images/portfolio/port-tab7@2x.webp 2x
+                      "
+                      type="image/jpg"
+                      <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab7@1x.jpg 1x,
+                        ./images/portfolio/port-tab7@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    />
+                    <!-- Mobile -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob7@1x.webp 1x,
+                        ./images/portfolio/port-mob7@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob7@1x.jpg 1x,
+                        ./images/portfolio/port-mob7@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./images/portfolio/port-mob7@1x.jpg"
+                      alt="Banking app interface"
+                      width="396"
+                      height="280"
+                      loading="lazy"
+                    />
+                  </picture>
 
                   <p class="overlay-text text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -260,12 +659,69 @@
             <li class="portfolio-item card-set-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/orgfood-8.jpg"
-                    alt="woman carry vegetables"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk8@1x.webp 1x,
+                        ./images/portfolio/port-desk8@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk8@1x.jpg 1x,
+                        ./images/portfolio/port-desk8@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab8@1x.webp 1x,
+                        ./images/portfolio/port-tab8@2x.webp 2x
+                      "
+                      type="image/jpg"
+                      <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab8@1x.jpg 1x,
+                        ./images/portfolio/port-tab8@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    />
+                    <!-- Mobile -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob8@1x.webp 1x,
+                        ./images/portfolio/port-mob8@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob8@1x.jpg 1x,
+                        ./images/portfolio/port-mob8@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./images/portfolio/port-mob8@1x.jpg"
+                      alt="Banking app interface"
+                      width="396"
+                      height="280"
+                      loading="lazy"
+                    />
+                  </picture>
 
                   <p class="overlay-text text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -282,12 +738,69 @@
             <li class="portfolio-item card-set-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/portfolio/frcoffe-9.jpg"
-                    alt="cup of coffee"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk9@1x.webp 1x,
+                        ./images/portfolio/port-desk9@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/port-desk9@1x.jpg 1x,
+                        ./images/portfolio/port-desk9@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab9@1x.webp 1x,
+                        ./images/portfolio/port-tab9@2x.webp 2x
+                      "
+                      type="image/jpg"
+                      <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/port-tab9@1x.jpg 1x,
+                        ./images/portfolio/port-tab9@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    />
+                    <!-- Mobile -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob9@1x.webp 1x,
+                        ./images/portfolio/port-mob9@2x.webp 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/port-mob9@1x.jpg 1x,
+                        ./images/portfolio/port-mob9@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./images/portfolio/port-mob9@1x.jpg"
+                      alt="Banking app interface"
+                      width="396"
+                      height="280"
+                      loading="lazy"
+                    />
+                  </picture>
 
                   <p class="overlay-text text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -307,7 +820,7 @@
     </main>
 
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
         <div class="logo-container">
           <a class="logo link" href="./index.html"
@@ -376,7 +889,7 @@
           </ul>
         </div>
 
-        SUBSCRIBE 
+        <!-- SUBSCRIBE  -->
         <div class="subscribe-container">
           <form class="subscribe-form">
             <p class="subscribe-text text" for="subscribe">Subscribe</p>
@@ -406,7 +919,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- MOBILE MENU -->
     <div class="menu-container js-menu-container" id="mobile-menu">

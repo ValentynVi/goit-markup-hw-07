@@ -1136,6 +1136,12 @@ ul {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 767px) {
+  .portfolio-img {
+    width: 396px;
+  }
+}
+
 .overlay-text {
   padding: 40px 32px;
   position: absolute;
